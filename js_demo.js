@@ -75,17 +75,13 @@ function callSum2(num1,num2){
 
 
 eval("function say(num){ alert(num) }");
-say('fuck world');
+// say('fuck world');
 
-var color = "使用window全局";
-function sayColor(){
-	alert(window.color);
-}
-window.sayColor();
+
 
 var arr = [1,2,3,34,56,566,3,23,45,57];
 var arrMax = Math.min.apply(Math,arr);
-alert(arrMax); 
+// alert(arrMax); 
 
 var person = {};
 Object.defineProperty(person,"name",{
@@ -93,9 +89,9 @@ Object.defineProperty(person,"name",{
 	value: "HXB"
 });
 
-alert(person.name);
+// alert(person.name);
 person.name = "Greg";
-alert(person.name);
+// alert(person.name);
 
 function createPerson(name,age,job){   //工厂模式
    var o = new Object();
@@ -108,7 +104,7 @@ function createPerson(name,age,job){   //工厂模式
    return o;
 }
 var person1 = createPerson("hook",26,"code");
-alert(person1.name);
+// alert(person1.name);
 
 function xxx(name,age,job){
 	this.name = name;
@@ -120,5 +116,3 @@ function xxx(name,age,job){
 }
 // var person1 = new xxx("虾米",24,"Software Eng");
 // alert(person1.name);
-var average = (289+280+127+170+267+104+267)/7;
-alert(average);
