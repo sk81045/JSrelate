@@ -116,3 +116,53 @@ function xxx(name,age,job){
 }
 // var person1 = new xxx("虾米",24,"Software Eng");
 // alert(person1.name);
+
+var m = new Map();
+m.set("Adam",67);
+m.set("Bob",59);
+m.set("Greg",90);
+for(var x of m){
+	// alert(x[0]+ '=' +x[1]);
+}
+
+
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="#F0F0F0";
+ctx.fillRect(0,0,800,300);
+
+ctx.moveTo(0,0);
+ctx.lineTo(800,0);
+
+ctx.moveTo(0,50);
+ctx.lineTo(800,50);
+
+ctx.moveTo(0,100);
+ctx.lineTo(800,100);
+
+ctx.moveTo(0,150);
+ctx.lineTo(800,150);
+
+ctx.moveTo(0,200);
+ctx.lineTo(800,200);
+
+ctx.moveTo(0,250);
+ctx.lineTo(800,250);
+
+ctx.moveTo(100,0);
+ctx.lineTo(100,250);
+
+ctx.moveTo(200,0);
+ctx.lineTo(200,250);
+
+ctx.moveTo(300,0);
+ctx.lineTo(300,250);
+
+ctx.moveTo(400,0);
+ctx.lineTo(400,250);
+
+ctx.arc(50,50,20,2,2*Math.PI*2);
+
+
+ctx.stroke();
