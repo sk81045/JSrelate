@@ -127,42 +127,21 @@ for(var x of m){
 
 
 
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.fillStyle="#F0F0F0";
-ctx.fillRect(0,0,800,300);
-
-ctx.moveTo(0,0);
-ctx.lineTo(800,0);
-
-ctx.moveTo(0,50);
-ctx.lineTo(800,50);
-
-ctx.moveTo(0,100);
-ctx.lineTo(800,100);
-
-ctx.moveTo(0,150);
-ctx.lineTo(800,150);
-
-ctx.moveTo(0,200);
-ctx.lineTo(800,200);
-
-ctx.moveTo(0,250);
-ctx.lineTo(800,250);
-
-ctx.moveTo(100,0);
-ctx.lineTo(100,250);
-
-ctx.moveTo(200,0);
-ctx.lineTo(200,250);
-
-ctx.moveTo(300,0);
-ctx.lineTo(300,250);
-
-ctx.moveTo(400,0);
-ctx.lineTo(400,250);
-
-ctx.arc(50,50,20,2,2*Math.PI*2);
 
 
-ctx.stroke();
+var canvas = document.getElementById('myCanvas');
+var cxt = canvas.getContext("2d");
+
+function makeArc(x,y,r,d){
+cxt.fillStyle = "#ff0000";
+cxt.beginPath();
+cxt.arc(x,y,r,d,Math.PI*2,true);    
+cxt.closePath();
+cxt.fill();
+}
+
+makeArc(60,18,20,0);
+makeArc(120,18,20,0);
+
+cxt.font="40px console";
+cxt.fillText("Hello World",10,50);
